@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Frame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="24" y="20" width="932" height="700"/>
+    </constraints>
+    <properties>
+      <maximumSize width="2147483647" height="2147483647"/>
+      <minimumSize width="800" height="700"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="d95b1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="afb78" binding="secondaryPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <minimumSize width="800" height="700"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="1da3e" binding="directory" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="8399" class="javax.swing.JTextField" binding="nazwaKataloguField">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="7e99d" class="javax.swing.JLabel" binding="nazwaKataloguLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="141" height="18"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Nazwa katalogu:"/>
+                    </properties>
+                  </component>
+                  <component id="47f28" class="javax.swing.JButton" binding="szukajKataloguButton" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <minimum-size width="150" height="30"/>
+                        <preferred-size width="150" height="30"/>
+                        <maximum-size width="170" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Szukaj katalogu"/>
+                    </properties>
+                  </component>
+                  <component id="ebf91" class="javax.swing.JLabel" binding="brakKataloguLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-65536"/>
+                      <text value="Niepoprawna nazwa katalogu!"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <hspacer id="68f71">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <scrollpane id="93484" binding="listaKatalogowScroll">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="c812c" class="javax.swing.JList" binding="listaKatalogow">
+                        <constraints/>
+                        <properties>
+                          <dragEnabled value="false"/>
+                          <model/>
+                          <selectionMode value="0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="20af0" binding="file" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1f3de" class="javax.swing.JLabel" binding="rozszerzeniePlikuLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Rozszerzenie pliku:"/>
+                    </properties>
+                  </component>
+                  <component id="7db49" class="javax.swing.JButton" binding="szukajPlikuButton" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <minimum-size width="150" height="30"/>
+                        <preferred-size width="150" height="30"/>
+                        <maximum-size width="170" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Szukaj pliku"/>
+                    </properties>
+                  </component>
+                  <component id="98a2f" class="javax.swing.JTextField" binding="nazwaPlikuField">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <hspacer id="4c972">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="415c3" class="javax.swing.JLabel" binding="brakPlikuLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-65536"/>
+                      <text value="Niepoprawne rozszerzenie pliku!"/>
+                      <verifyInputWhenFocusTarget value="false"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="8a3d2" binding="listaPlikowScrollPane">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="2dccc" class="javax.swing.JList" binding="listaPlikow">
+                        <constraints/>
+                        <properties>
+                          <model/>
+                          <selectionMode value="0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="ef348" binding="bytes" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="d7b45" class="javax.swing.JTextField" binding="inputBytes">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="6cc6f" class="javax.swing.JTextField" binding="outputBytes">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                    </properties>
+                  </component>
+                  <component id="81483" class="javax.swing.JButton" binding="wykonajButton" default-binding="true">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="90" height="25"/>
+                        <preferred-size width="90" height="25"/>
+                        <maximum-size width="90" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <margin top="0" left="0" bottom="0" right="0"/>
+                      <text value="Wykonaj"/>
+                    </properties>
+                  </component>
+                  <component id="84723" class="javax.swing.JLabel" binding="wymienianyCiągBajtówLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Wymieniany ciąg bajtów:"/>
+                    </properties>
+                  </component>
+                  <component id="70a8" class="javax.swing.JLabel" binding="inputByteError">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-65536"/>
+                      <text value="Wprowadź ciąg bajtów!"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="8ec66" class="javax.swing.JLabel" binding="wprowadzonyCiągBajtówLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Wprowadzony ciąg bajtów:"/>
+                    </properties>
+                  </component>
+                  <component id="997bc" class="javax.swing.JLabel" binding="outputByteError">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-65536"/>
+                      <text value="Wprowadź ciąg bajtów!"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <hspacer id="7a8a3">
+                    <constraints>
+                      <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="5b488" class="javax.swing.JButton" binding="restartButton">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="90" height="25"/>
+                        <preferred-size width="90" height="25"/>
+                        <maximum-size width="90" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Restart"/>
+                    </properties>
+                  </component>
+                  <component id="3290a" class="javax.swing.JButton" binding="pomocButton">
+                    <constraints>
+                      <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="90" height="25"/>
+                        <preferred-size width="90" height="25"/>
+                        <maximum-size width="90" height="25"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Pomoc"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
